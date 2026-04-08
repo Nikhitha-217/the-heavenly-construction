@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="The Heavenly Group — Premium Home Construction with Royal Elegance in Bangalore."><title>Home | The Heavenly Group</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav id="mainNav"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="nav-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a href="#">Services <span class="arrow">▾</span></a><div class="dropdown"><a href="residential.html"><span class="dd-icon">🏠</span> Residential Construction</a><a href="commercial.html"><span class="dd-icon">🏢</span> Commercial Construction</a></div></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li>
+    <li><a href="estimator.html" class="nav-cta">Free Estimate</a></li></ul></nav>
+<style>
+.hero{min-height:100vh;background:var(--navy);position:relative;overflow:hidden;display:flex;align-items:center;}
+.hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 65% 50%,rgba(201,151,58,.07) 0%,transparent 65%),linear-gradient(160deg,#0C1C35 0%,#0E2040 50%,#112244 100%);}
+.hero-pat{position:absolute;inset:0;opacity:.03;background-image:repeating-linear-gradient(60deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%),repeating-linear-gradient(-60deg,var(--gold) 0,var(--gold) 1px,transparent 0,transparent 50%);background-size:80px 80px;}
+.hero-photo{position:absolute;right:0;top:0;bottom:0;width:46%;background:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&q=85') center/cover no-repeat;clip-path:polygon(12% 0%,100% 0%,100% 100%,0% 100%);}
+.hero-photo::before{content:'';position:absolute;inset:0;background:linear-gradient(to right,rgba(12,28,53,1) 0%,rgba(12,28,53,.6) 30%,rgba(12,28,53,.15) 75%,rgba(12,28,53,.3) 100%);}
+.hero-content{position:relative;z-index:3;padding:160px 64px 100px;max-width:680px;animation:hFade 1.2s ease both;}
+@keyframes hFade{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+.hero-crown{display:inline-flex;align-items:center;gap:14px;margin-bottom:28px;}
+.hero-crown::before,.hero-crown::after{content:'';flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(201,151,58,.5));}
+.hero-crown span{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-2);font-weight:500;white-space:nowrap;}
+.hero-tagline{font-family:'EB Garamond',serif;font-size:15px;font-style:italic;color:var(--gold-3);letter-spacing:.06em;margin-bottom:18px;}
+.hero-title{font-family:'Cinzel',serif;font-size:clamp(42px,5.2vw,78px);font-weight:600;color:var(--off-white);line-height:1.07;letter-spacing:.04em;margin-bottom:8px;}
+.hero-title .gold{color:var(--gold-3);}
+.hero-sub{font-size:15px;font-weight:300;line-height:1.85;color:var(--stone-light);max-width:460px;letter-spacing:.02em;margin:24px 0 36px;}
+.hero-divider{width:72px;height:2px;background:linear-gradient(90deg,var(--gold),var(--gold-3));margin-bottom:36px;position:relative;}
+.hero-divider::after{content:'◆';position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);color:var(--gold-2);font-size:9px;background:var(--navy);padding:0 6px;}
+.hero-actions{display:flex;align-items:center;gap:18px;margin-bottom:56px;}
+.hero-stats{display:flex;border-top:1px solid rgba(201,151,58,.15);border-bottom:1px solid rgba(201,151,58,.15);padding:22px 0;}
+.h-stat{flex:1;text-align:center;padding:0 20px;border-right:1px solid rgba(201,151,58,.1);}
+.h-stat:last-child{border-right:none;}
+.h-stat-n{font-family:'Cinzel',serif;font-size:34px;font-weight:600;color:var(--gold-2);display:block;line-height:1;}
+.h-stat-l{font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--stone);margin-top:5px;display:block;font-weight:400;}
+.why{display:grid;grid-template-columns:1fr 1fr;}
+.why-img-side{position:relative;overflow:hidden;min-height:600px;}
+.why-img-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80') center/cover no-repeat;}
+.why-img-ov{position:absolute;inset:0;background:linear-gradient(135deg,rgba(12,28,53,.4),rgba(12,28,53,.1));}
+.why-crest{position:absolute;bottom:0;right:0;background:linear-gradient(135deg,var(--gold),var(--gold-3));padding:32px 36px;text-align:center;}
+.why-crest strong{font-family:'Cinzel',serif;font-size:44px;font-weight:700;color:var(--navy);display:block;line-height:1;}
+.why-crest span{font-size:9.5px;letter-spacing:.2em;color:var(--navy);text-transform:uppercase;font-weight:600;}
+.why-text{padding:80px 64px;background:var(--warm-white);}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:36px;}
+.why-card{padding:26px 22px;background:white;border:1px solid rgba(201,151,58,.1);border-radius:2px;position:relative;overflow:hidden;transition:all .35s;}
+.why-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(to bottom,var(--gold),var(--gold-3));transform:scaleY(0);transform-origin:top;transition:transform .4s;}
+.why-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(12,28,53,.1);border-color:rgba(201,151,58,.3);}
+.why-card:hover::before{transform:scaleY(1);}
+.why-icon{font-size:22px;margin-bottom:11px;display:block;}
+.why-card h4{font-family:'Cinzel',serif;font-size:13px;font-weight:600;color:var(--navy);margin-bottom:7px;}
+.why-card p{font-size:13px;line-height:1.65;color:#5A6B82;font-weight:300;}
+.svc-section{background:var(--navy);padding:110px 64px;}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.svc-card{position:relative;overflow:hidden;aspect-ratio:4/5;cursor:pointer;}
+.svc-card:first-child{aspect-ratio:auto;grid-row:1/3;}
+.svc-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .8s;}
+.svc-card:hover .svc-bg{transform:scale(1.1);}
+.svc-ov{position:absolute;inset:0;background:linear-gradient(to top,rgba(12,28,53,.97) 0%,rgba(12,28,53,.35) 55%,rgba(12,28,53,.18) 100%);}
+.svc-cnt{position:absolute;bottom:0;left:0;right:0;padding:30px 26px;}
+.svc-num{font-family:'Cinzel',serif;font-size:10.5px;color:var(--gold-2);letter-spacing:.24em;display:block;margin-bottom:8px;}
+.svc-cnt h3{font-family:'Cinzel',serif;font-size:17px;font-weight:500;color:var(--off-white);line-height:1.3;margin-bottom:8px;}
+.svc-cnt p{font-size:13px;color:var(--stone-light);font-weight:300;max-height:0;overflow:hidden;transition:max-height .5s,opacity .4s;opacity:0;}
+.svc-card:hover .svc-cnt p{max-height:100px;opacity:1;}
+.svc-arrow{color:var(--gold-2);font-size:10px;letter-spacing:.18em;text-transform:uppercase;font-family:'Cinzel',serif;margin-top:12px;opacity:0;transform:translateY(6px);transition:all .4s;display:block;}
+.svc-card:hover .svc-arrow{opacity:1;transform:translateY(0);}
+.stats-row{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold-2) 100%);display:grid;grid-template-columns:repeat(4,1fr);}
+.stat-cell{padding:48px 24px;text-align:center;border-right:1px solid rgba(12,28,53,.12);transition:background .3s;}
+.stat-cell:last-child{border-right:none;}
+.stat-cell:hover{background:rgba(12,28,53,.07);}
+.stat-n{font-family:'Cinzel',serif;font-size:50px;font-weight:700;color:var(--navy);display:block;line-height:1;}
+.stat-l{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-top:7px;display:block;font-weight:600;}
+.proc-section{background:var(--navy-2);padding:110px 64px;}
+.proc-steps{display:grid;grid-template-columns:repeat(4,1fr);position:relative;}
+.proc-steps::before{content:'';position:absolute;top:42px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-2),var(--gold-3),var(--gold-2),transparent);}
+.proc-step{padding:0 24px;text-align:center;}
+.proc-num{width:52px;height:52px;border-radius:50%;background:var(--navy-3);border:1.5px solid var(--gold-2);display:flex;align-items:center;justify-content:center;margin:0 auto 32px;font-family:'Cinzel',serif;font-size:17px;font-weight:600;color:var(--gold-2);position:relative;z-index:2;transition:all .4s;}
+.proc-step:hover .proc-num{background:linear-gradient(135deg,var(--gold),var(--gold-3));color:var(--navy);border-color:transparent;}
+.proc-step h4{font-family:'Cinzel',serif;font-size:13.5px;font-weight:600;color:var(--off-white);margin-bottom:12px;}
+.proc-step p{font-size:13px;line-height:1.75;color:var(--stone);font-weight:300;}
+.pkg-section{background:var(--warm-white);padding:110px 64px;}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.pkg-card{background:white;border-radius:2px;border:1px solid rgba(12,28,53,.08);overflow:hidden;transition:all .4s;position:relative;}
+.pkg-card:hover{transform:translateY(-7px);box-shadow:0 26px 64px rgba(12,28,53,.11);}
+.pkg-hd{padding:38px 34px 30px;border-bottom:1px solid rgba(12,28,53,.06);}
+.pkg-tier{font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--gold-2);font-weight:700;font-family:'Cinzel',serif;margin-bottom:10px;display:block;}
+.pkg-name{font-family:'Cinzel',serif;font-size:25px;font-weight:600;color:var(--navy);margin-bottom:18px;}
+.pkg-price strong{font-family:'Cinzel',serif;font-size:42px;font-weight:700;color:var(--navy);line-height:1;}
+.pkg-price span{font-size:13.5px;color:#5A6B82;font-weight:300;}
+.pkg-body{padding:30px 34px 38px;}
+.pkg-feats{list-style:none;margin-bottom:32px;}
+.pkg-feats li{display:flex;align-items:flex-start;gap:11px;padding:9px 0;border-bottom:1px solid rgba(12,28,53,.05);font-size:13.5px;color:#4A5D72;font-weight:300;}
+.pkg-feats li::before{content:'✦';color:var(--gold-2);font-size:9px;margin-top:3px;flex-shrink:0;}
+.pkg-btn{width:100%;padding:14px;border:1.5px solid rgba(12,28,53,.18);background:transparent;border-radius:1px;font-family:'Cinzel',serif;font-size:10.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);cursor:pointer;transition:all .35s;}
+.pkg-btn:hover{background:var(--navy);color:var(--gold-3);border-color:var(--navy);}
+.pkg-card.feat{background:var(--navy);border-color:var(--gold-2);}
+.pkg-card.feat::after{content:'MOST POPULAR';position:absolute;top:18px;right:-30px;background:linear-gradient(135deg,var(--gold),var(--gold-3));color:var(--navy);font-size:7.5px;letter-spacing:.2em;font-weight:700;font-family:'Cinzel',serif;padding:5px 44px;transform:rotate(45deg);}
+.pkg-card.feat .pkg-hd{border-bottom-color:rgba(201,151,58,.15);}
+.pkg-card.feat .pkg-tier,.pkg-card.feat .pkg-name{color:var(--gold-3);}
+.pkg-card.feat .pkg-name{color:var(--off-white);}
+.pkg-card.feat .pkg-price strong{color:var(--gold-2);}
+.pkg-card.feat .pkg-price span,.pkg-card.feat .pkg-feats li{color:var(--stone-light);}
+.pkg-card.feat .pkg-feats li{border-bottom-color:rgba(255,255,255,.04);}
+.pkg-card.feat .pkg-btn{background:linear-gradient(135deg,var(--gold),var(--gold-3));color:var(--navy);border-color:transparent;}
+.test-section{background:var(--off-white);padding:110px 64px;}
+.test-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.test-card{background:white;border-radius:2px;padding:40px 34px;border:1px solid rgba(12,28,53,.07);position:relative;overflow:hidden;transition:all .35s;}
+.test-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-3));transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.test-card:hover{transform:translateY(-5px);box-shadow:0 18px 52px rgba(12,28,53,.09);}
+.test-card:hover::before{transform:scaleX(1);}
+.test-q{font-family:'EB Garamond',serif;font-size:72px;color:var(--gold-pale);line-height:.7;margin-bottom:14px;font-style:italic;font-weight:700;}
+.test-txt{font-family:'EB Garamond',serif;font-size:18px;line-height:1.75;color:var(--text-dark);font-style:italic;margin-bottom:24px;}
+.test-stars{color:var(--gold-2);font-size:12px;margin-bottom:20px;letter-spacing:3px;}
+.test-author{display:flex;align-items:center;gap:13px;}
+.test-av{width:42px;height:42px;border-radius:50%;background:linear-gradient(135deg,var(--navy-3),var(--navy));display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:15px;font-weight:600;color:var(--gold-2);flex-shrink:0;border:1.5px solid rgba(201,151,58,.3);}
+.test-info strong{display:block;font-size:14px;font-weight:600;color:var(--navy);font-family:'Cinzel',serif;}
+.test-info span{font-size:12px;color:#8A9BB5;font-weight:300;}
+</style>
+
+<section class="hero">
+  <div class="hero-bg"></div><div class="hero-pat"></div><div class="hero-photo"></div>
+  <div class="hero-content">
+    <div class="hero-crown"><span>Est. 2016 &nbsp;·&nbsp; Bangalore, India</span></div>
+    <p class="hero-tagline">Home Construction with Royal Elegance</p>
+    <h1 class="hero-title">Build Your <span class="gold">Dream</span><br>With Total Confidence</h1>
+    <p class="hero-sub">From first blueprint to final handover — every stage planned with precision, built to the highest standard, delivered on time.</p>
+    <div class="hero-divider"></div>
+    <div class="hero-actions">
+      <a href="estimator.html" class="btn-royal">Get Free Estimate →</a>
+      <a href="portfolio.html" class="btn-noble">View Portfolio</a>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><span class="h-stat-n" data-target="19" data-suffix="+">19+</span><span class="h-stat-l">Projects Delivered</span></div>
+      <div class="h-stat"><span class="h-stat-n">1%</span><span class="h-stat-l">Clear Pricing</span></div>
+      <div class="h-stat"><span class="h-stat-n" data-target="450" data-suffix="+">450+</span><span class="h-stat-l">Quality Checks</span></div>
+      <div class="h-stat"><span class="h-stat-n" data-target="3" data-suffix="+">3+</span><span class="h-stat-l">Years Trust</span></div>
+    </div>
+  </div>
+</section>
+<div class="marquee-strip"><div class="marquee-inner"><span class="marquee-item">Residential Construction</span><span class="marquee-item">Commercial Projects</span><span class="marquee-item">Transparent Pricing</span><span class="marquee-item">On-Time Delivery</span><span class="marquee-item">Quality Assurance</span><span class="marquee-item">Royal Elegance</span><span class="marquee-item">Residential Construction</span><span class="marquee-item">Commercial Projects</span><span class="marquee-item">Transparent Pricing</span><span class="marquee-item">On-Time Delivery</span><span class="marquee-item">Quality Assurance</span><span class="marquee-item">Royal Elegance</span></div></div>
+<div class="why">
+  <div class="why-img-side reveal-left"><div class="why-img-bg"></div><div class="why-img-ov"></div><div class="why-crest"><strong>19+</strong><span>Projects Delivered</span></div></div>
+  <div class="why-text reveal-right">
+    <div class="royal-badge"><span>Why Choose Us</span></div>
+    <h2 class="section-title title-dark">The Standard Others <span class="italic">Aspire</span> To</h2>
+    <p style="font-size:15px;line-height:1.9;color:#5A6B82;font-weight:300;">We believe construction should be transparent, dependable, and completely stress-free — from foundation to final handover.</p>
+    <div class="why-grid">
+      <div class="why-card"><span class="why-icon">🏛️</span><h4>Transparent Pricing</h4><p>Fixed-price contracts. No hidden charges — ever.</p></div>
+      <div class="why-card"><span class="why-icon">⭐</span><h4>Quality Assurance</h4><p>450+ checkpoints at every stage of your build.</p></div>
+      <div class="why-card"><span class="why-icon">📅</span><h4>On-Time Delivery</h4><p>Penalty mechanisms built into all contracts.</p></div>
+      <div class="why-card"><span class="why-icon">📲</span><h4>Online Monitoring</h4><p>Real-time progress via our client portal.</p></div>
+    </div>
+  </div>
+</div>
+<section class="svc-section reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>What We Build</span></div>
+    <h2 class="section-title title-light">Our Construction <span class="italic">Services</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="svc-grid">
+    <div class="svc-card"><div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=700&q=80')"></div><div class="svc-ov"></div><div class="svc-cnt"><span class="svc-num">01</span><h3>Residential Construction</h3><p>Custom homes built to your vision, managed end-to-end with precision.</p><a href="residential.html" class="svc-arrow">Explore →</a></div></div>
+    <div class="svc-card"><div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80')"></div><div class="svc-ov"></div><div class="svc-cnt"><span class="svc-num">02</span><h3>Commercial Construction</h3><p>Offices, retail and hospitals built to the highest standards.</p><a href="commercial.html" class="svc-arrow">Explore →</a></div></div>
+    <div class="svc-card"><div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=80')"></div><div class="svc-ov"></div><div class="svc-cnt"><span class="svc-num">03</span><h3>Design &amp; Planning</h3><p>Architecture, engineering and compliance under one roof.</p></div></div>
+    <div class="svc-card"><div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=700&q=80')"></div><div class="svc-ov"></div><div class="svc-cnt"><span class="svc-num">04</span><h3>Renovation &amp; Interiors</h3><p>Transform spaces with premium finishes and modern design.</p></div></div>
+    <div class="svc-card"><div class="svc-bg" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80')"></div><div class="svc-ov"></div><div class="svc-cnt"><span class="svc-num">05</span><h3>Developer Partnerships</h3><p>Long-term partnerships for large-scale project owners.</p></div></div>
+  </div>
+</section>
+<div class="stats-row reveal">
+  <div class="stat-cell"><span class="stat-n" data-target="5000" data-suffix="+">5000+</span><span class="stat-l">SKUs in Stock</span></div>
+  <div class="stat-cell"><span class="stat-n" data-target="19" data-suffix="+">19+</span><span class="stat-l">Projects Delivered</span></div>
+  <div class="stat-cell"><span class="stat-n">24/7</span><span class="stat-l">On-Site Support</span></div>
+  <div class="stat-cell"><span class="stat-n">A+</span><span class="stat-l">Quality Materials</span></div>
+</div>
+<section class="proc-section reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>How We Work</span></div>
+    <h2 class="section-title title-light">Our Royal <span class="italic">Process</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="proc-steps">
+    <div class="proc-step"><div class="proc-num">01</div><h4>Expert Consultation</h4><p>Understanding your vision, budget and timeline.</p></div>
+    <div class="proc-step"><div class="proc-num">02</div><h4>Design &amp; Cost Plan</h4><p>Blueprints with a transparent fixed-cost estimate.</p></div>
+    <div class="proc-step"><div class="proc-num">03</div><h4>Site Evaluation</h4><p>On-site assessment confirms structural requirements.</p></div>
+    <div class="proc-step"><div class="proc-num">04</div><h4>Agreement &amp; Build</h4><p>Clear contract, construction begins with real-time updates.</p></div>
+  </div>
+</section>
+<section class="pkg-section reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Pricing</span></div>
+    <h2 class="section-title title-dark">Construction <span class="italic">Packages</span></h2>
+    <p class="section-body body-dark" style="margin-top:14px">Transparent, fixed-rate pricing. No hidden charges.</p>
+    <div class="gold-rule" style="margin-top:22px"><span>◆</span></div>
+  </div>
+  <div class="pkg-grid">
+    <div class="pkg-card"><div class="pkg-hd"><span class="pkg-tier">Starter</span><div class="pkg-name">Essential</div><div class="pkg-price"><strong>₹1,799</strong><span>/sq.ft onwards</span></div></div><div class="pkg-body"><ul class="pkg-feats"><li>Structural design &amp; planning</li><li>Standard quality materials</li><li>Basic electrical &amp; plumbing</li><li>Monthly progress reports</li><li>1-year structural warranty</li></ul><button class="pkg-btn" onclick="location.href='estimator.html'">Get Started</button></div></div>
+    <div class="pkg-card feat"><div class="pkg-hd"><span class="pkg-tier">Best Value</span><div class="pkg-name">Signature</div><div class="pkg-price"><strong>₹2,199</strong><span>/sq.ft onwards</span></div></div><div class="pkg-body"><ul class="pkg-feats"><li>All Essential features</li><li>Premium quality materials</li><li>Full interior civil work</li><li>Weekly progress tracking</li><li>3-year structural warranty</li><li>Dedicated project manager</li></ul><button class="pkg-btn" onclick="location.href='estimator.html'">Get Started</button></div></div>
+    <div class="pkg-card"><div class="pkg-hd"><span class="pkg-tier">Luxury</span><div class="pkg-name">Royal</div><div class="pkg-price"><strong>₹2,799</strong><span>/sq.ft onwards</span></div></div><div class="pkg-body"><ul class="pkg-feats"><li>All Signature features</li><li>Imported luxury materials</li><li>Smart home integration</li><li>Real-time online monitoring</li><li>5-year structural warranty</li><li>Architect consultation</li></ul><button class="pkg-btn" onclick="location.href='estimator.html'">Get Started</button></div></div>
+  </div>
+</section>
+<section class="test-section reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Client Voices</span></div>
+    <h2 class="section-title title-dark">What Our Clients <span class="italic">Say</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="test-grid">
+    <div class="test-card"><div class="test-q">"</div><p class="test-txt">Professional from day one. Our home was delivered exactly on time and quality exceeded all expectations.</p><div class="test-stars">★★★★★</div><div class="test-author"><div class="test-av">R</div><div class="test-info"><strong>Ramesh B.</strong><span>Residential Client, Jayanagar</span></div></div></div>
+    <div class="test-card"><div class="test-q">"</div><p class="test-txt">Transparent billing and online tracking gave us complete peace of mind throughout the entire project.</p><div class="test-stars">★★★★★</div><div class="test-author"><div class="test-av">A</div><div class="test-info"><strong>Anush S.</strong><span>Commercial Client, Whitefield</span></div></div></div>
+    <div class="test-card"><div class="test-q">"</div><p class="test-txt">Quality and finishing delivered with strong expertise. We will work with Heavenly Group again without hesitation.</p><div class="test-stars">★★★★★</div><div class="test-author"><div class="test-av">M</div><div class="test-info"><strong>Monica P.</strong><span>Villa Client, Sarjapur</span></div></div></div>
+  </div>
+</section>
+<section class="cta-banner reveal"><div class="cta-text"><h2>Ready to Build Something <em>Heavenly?</em></h2><p>Book a free consultation and let us bring your vision to life — with royal precision.</p></div><div class="cta-actions"><a href="estimator.html" class="btn-navy">Get Free Estimate</a><a href="clients.html" class="btn-outline-navy">Our Clients</a></div></section><footer><div class="footer-grid"><div><div class="footer-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="footer-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></div><p class="footer-desc">Premium construction across Bangalore since 2016.</p><div class="footer-social"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="estimator.html">Free Estimator</a></li></ul></div><div class="footer-col"><h5>Services</h5><ul><li><a href="residential.html">Residential Construction</a></li><li><a href="commercial.html">Commercial Construction</a></li><li><a href="residential.html">Design &amp; Planning</a></li><li><a href="residential.html">Renovation &amp; Interiors</a></li></ul></div><div class="footer-col"><h5>Contact</h5><div class="footer-contact-row"><span class="icon">📞</span><span>+91 99800 14207</span></div><div class="footer-contact-row"><span class="icon">✉️</span><span>info@heavenlygroup.com</span></div><div class="footer-contact-row"><span class="icon">📍</span><span>Mumbai, Maharashtra 400001</span></div></div></div><div class="footer-bottom"><p>© 2026 The Heavenly Group Pvt. Ltd. All rights reserved.</p><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div></footer><button class="float-btn" onclick="window.location='mailto:info@heavenlygroup.com'">💬</button><script src="js/main.js"></script></body></html>

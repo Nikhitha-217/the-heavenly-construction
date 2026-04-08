@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Commercial Construction | The Heavenly Group</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav id="mainNav"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="nav-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a href="#">Services <span class="arrow">▾</span></a><div class="dropdown"><a href="residential.html"><span class="dd-icon">🏠</span> Residential Construction</a><a href="commercial.html"><span class="dd-icon">🏢</span> Commercial Construction</a></div></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li>
+    <li><a href="estimator.html" class="nav-cta">Free Estimate</a></li></ul></nav>
+<style>
+.comm-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;}
+.comm-card{position:relative;overflow:hidden;aspect-ratio:4/5;cursor:pointer;}
+.comm-bg{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .7s;}
+.comm-card:hover .comm-bg{transform:scale(1.08);}
+.comm-ov{position:absolute;inset:0;background:rgba(12,28,53,.5);transition:background .4s;}
+.comm-card:hover .comm-ov{background:rgba(12,28,53,.85);}
+.comm-cnt{position:absolute;bottom:0;left:0;right:0;padding:28px 24px;}
+.comm-num{font-family:'Cinzel',serif;font-size:10px;color:var(--gold-2);letter-spacing:.22em;display:block;margin-bottom:8px;}
+.comm-cnt h3{font-family:'Cinzel',serif;font-size:18px;font-weight:500;color:var(--off-white);margin-bottom:8px;}
+.comm-p{font-size:13px;line-height:1.65;color:var(--stone-light);font-weight:300;max-height:0;overflow:hidden;transition:max-height .5s,opacity .4s;opacity:0;}
+.comm-card:hover .comm-p{max-height:80px;opacity:1;}
+.comm-stats{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-3) 50%,var(--gold) 100%);display:grid;grid-template-columns:repeat(4,1fr);}
+.cs{padding:48px 24px;text-align:center;border-right:1px solid rgba(12,28,53,.12);}
+.cs:last-child{border-right:none;}
+.cs strong{font-family:'Cinzel',serif;font-size:48px;font-weight:700;color:var(--navy);display:block;line-height:1;}
+.cs span{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--navy);margin-top:7px;display:block;font-weight:600;}
+.proc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative;}
+.proc-grid::before{content:'';position:absolute;top:40px;left:12%;right:12%;height:1px;background:linear-gradient(90deg,transparent,var(--gold-2),var(--gold-3),var(--gold-2),transparent);}
+.pg-step{padding:0 24px;text-align:center;}
+.pg-num{width:52px;height:52px;border-radius:50%;background:var(--navy-3);border:1.5px solid var(--gold-2);display:flex;align-items:center;justify-content:center;margin:0 auto 32px;font-family:'Cinzel',serif;font-size:17px;font-weight:600;color:var(--gold-2);position:relative;z-index:2;transition:all .4s;}
+.pg-step:hover .pg-num{background:linear-gradient(135deg,var(--gold),var(--gold-3));color:var(--navy);border-color:transparent;}
+.pg-step h4{font-family:'Cinzel',serif;font-size:13.5px;font-weight:600;color:var(--off-white);margin-bottom:12px;}
+.pg-step p{font-size:13px;line-height:1.75;color:var(--stone);font-weight:300;}
+</style>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div><div class="page-hero-pat"></div>
+  <div style="position:absolute;right:0;top:0;bottom:0;width:44%;background:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=900&q=85') center/cover no-repeat;clip-path:polygon(15% 0%,100% 0%,100% 100%,0% 100%);"></div>
+  <div style="position:absolute;right:0;top:0;bottom:0;width:44%;background:linear-gradient(to right,rgba(12,28,53,1) 0%,rgba(12,28,53,.5) 30%,transparent 80%);"></div>
+  <div class="page-hero-cnt">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <a href="#">Services</a> › <span>Commercial</span></div>
+    <div class="ph-line"><span>Commercial Services</span></div>
+    <h1>Commercial Spaces<br>Built for <span class="italic">Excellence.</span></h1>
+    <p>From corporate headquarters to retail complexes, hospitals, hotels and schools — we deliver large-scale projects that stand as landmarks of quality and precision.</p>
+    <div style="display:flex;gap:16px;margin-top:32px;"><a href="estimator.html" class="btn-royal">Get Commercial Quote</a><a href="portfolio.html" class="btn-noble">View Portfolio</a></div>
+  </div>
+</section>
+<div class="marquee-strip"><div class="marquee-inner"><span class="marquee-item">Office Buildings</span><span class="marquee-item">Retail Complexes</span><span class="marquee-item">Hospitals</span><span class="marquee-item">Hotels</span><span class="marquee-item">Schools</span><span class="marquee-item">Developer Partnerships</span><span class="marquee-item">Office Buildings</span><span class="marquee-item">Retail Complexes</span><span class="marquee-item">Hospitals</span><span class="marquee-item">Hotels</span><span class="marquee-item">Schools</span><span class="marquee-item">Developer Partnerships</span></div></div>
+<section style="background:var(--navy);padding:110px 64px;" class="reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Commercial Verticals</span></div>
+    <h2 class="section-title title-light">Industries We <span class="italic">Serve</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="comm-grid">
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">01</span><h3>Office Buildings</h3><p class="comm-p">Corporate headquarters, IT parks, and co-working campuses built for productivity and prestige.</p></div></div>
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">02</span><h3>Retail &amp; Commercial</h3><p class="comm-p">Shopping centres, retail outlets, and mixed-use complexes with high footfall capacity.</p></div></div>
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">03</span><h3>Hospital Buildings</h3><p class="comm-p">Healthcare infrastructure with compliance, MEP precision, and patient-first design principles.</p></div></div>
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">04</span><h3>Hotel Buildings</h3><p class="comm-p">Luxury and business hotels built to international hospitality standards and aesthetics.</p></div></div>
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1523413555754-5e1a35a73574?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">05</span><h3>School Buildings</h3><p class="comm-p">Educational campuses designed for safety, learning, and long-term institutional durability.</p></div></div>
+    <div class="comm-card"><div class="comm-bg" style="background-image:url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&q=80')"></div><div class="comm-ov"></div><div class="comm-cnt"><span class="comm-num">06</span><h3>Developer Partnerships</h3><p class="comm-p">Long-term partnerships for real estate developers building large-scale commercial properties.</p></div></div>
+  </div>
+</section>
+
+<div class="comm-stats reveal">
+  <div class="cs"><strong data-target="10" data-suffix="+">10+</strong><span>Commercial Projects</span></div>
+  <div class="cs"><strong>1.5L+</strong><span>Sq.Ft Delivered</span></div>
+  <div class="cs"><strong data-target="6">6</strong><span>Verticals Served</span></div>
+  <div class="cs"><strong>100%</strong><span>On-Time Record</span></div>
+</div>
+
+<section style="background:var(--navy-2);padding:110px 64px;" class="reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Our Approach</span></div>
+    <h2 class="section-title title-light">Commercial <span class="italic">Process</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="proc-grid">
+    <div class="pg-step"><div class="pg-num">01</div><h4>Site Analysis</h4><p>Detailed feasibility study, soil testing, and regulatory review before commitment.</p></div>
+    <div class="pg-step"><div class="pg-num">02</div><h4>Design &amp; BOQ</h4><p>Architectural drawings, structural design, and detailed Bill of Quantities with fixed pricing.</p></div>
+    <div class="pg-step"><div class="pg-num">03</div><h4>Construction Phase</h4><p>Phased construction with weekly stakeholder reporting and real-time digital monitoring.</p></div>
+    <div class="pg-step"><div class="pg-num">04</div><h4>Handover &amp; Support</h4><p>Formal snagging, OC procurement, and 12-month post-handover maintenance support.</p></div>
+  </div>
+</section>
+<section class="cta-banner reveal"><div class="cta-text"><h2>Start Your Commercial <em>Project Today</em></h2><p>Get a detailed consultation and cost plan from our commercial construction experts.</p></div><div class="cta-actions"><a href="estimator.html" class="btn-navy">Get Commercial Quote</a><a href="portfolio.html" class="btn-outline-navy">Our Portfolio</a></div></section><footer><div class="footer-grid"><div><div class="footer-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="footer-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></div><p class="footer-desc">Premium construction across Bangalore since 2016.</p><div class="footer-social"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="estimator.html">Free Estimator</a></li></ul></div><div class="footer-col"><h5>Services</h5><ul><li><a href="residential.html">Residential Construction</a></li><li><a href="commercial.html">Commercial Construction</a></li><li><a href="residential.html">Design &amp; Planning</a></li><li><a href="residential.html">Renovation &amp; Interiors</a></li></ul></div><div class="footer-col"><h5>Contact</h5><div class="footer-contact-row"><span class="icon">📞</span><span>+91 99800 14207</span></div><div class="footer-contact-row"><span class="icon">✉️</span><span>info@heavenlygroup.com</span></div><div class="footer-contact-row"><span class="icon">📍</span><span>Mumbai, Maharashtra 400001</span></div></div></div><div class="footer-bottom"><p>© 2026 The Heavenly Group Pvt. Ltd. All rights reserved.</p><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div></footer><button class="float-btn" onclick="window.location='mailto:info@heavenlygroup.com'">💬</button><script src="js/main.js"></script></body></html>

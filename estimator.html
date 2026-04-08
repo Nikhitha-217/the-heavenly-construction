@@ -1,0 +1,129 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Free Estimator | The Heavenly Group</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav id="mainNav"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="nav-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a href="#">Services <span class="arrow">▾</span></a><div class="dropdown"><a href="residential.html"><span class="dd-icon">🏠</span> Residential Construction</a><a href="commercial.html"><span class="dd-icon">🏢</span> Commercial Construction</a></div></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li>
+    <li><a href="estimator.html" class="nav-cta">Free Estimate</a></li></ul></nav>
+<style>
+.est-wrap{max-width:820px;margin:0 auto;}
+.est-card{background:white;border-radius:2px;border:1px solid rgba(12,28,53,.08);overflow:hidden;box-shadow:0 24px 64px rgba(12,28,53,.1);}
+.est-hd{background:var(--navy);padding:40px 48px;border-bottom:2px solid var(--gold-2);}
+.est-hd h2{font-family:'Cinzel',serif;font-size:24px;font-weight:600;color:var(--off-white);margin-bottom:8px;letter-spacing:.05em;}
+.est-hd p{font-size:14px;color:var(--stone-light);font-weight:300;}
+.est-body{padding:48px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;}
+.form-row.full{grid-template-columns:1fr;}
+.form-group{display:flex;flex-direction:column;gap:8px;}
+label{font-family:'Cinzel',serif;font-size:10.5px;font-weight:600;color:var(--navy);letter-spacing:.18em;text-transform:uppercase;}
+input,select,textarea{padding:14px 18px;border:1.5px solid rgba(12,28,53,.12);border-radius:1px;font-family:'Raleway',sans-serif;font-size:14px;color:var(--text-dark);background:var(--warm-white);transition:border-color .3s;outline:none;width:100%;}
+input:focus,select:focus,textarea:focus{border-color:var(--gold-2);background:white;}
+textarea{resize:vertical;min-height:100px;}
+.live-calc{background:var(--navy);border-radius:2px;padding:32px;margin:24px 0;border:1px solid rgba(201,151,58,.2);}
+.live-calc h4{font-family:'Cinzel',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--stone-light);margin-bottom:16px;}
+.live-calc .est-amount{font-family:'Cinzel',serif;font-size:48px;font-weight:700;color:var(--gold-2);display:block;line-height:1;}
+.live-calc small{font-size:12px;color:var(--stone);font-weight:300;margin-top:6px;display:block;}
+.submit-btn{width:100%;padding:18px;background:linear-gradient(135deg,var(--gold),var(--gold-3));color:var(--navy);border:none;border-radius:1px;font-family:'Cinzel',serif;font-size:12px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;cursor:pointer;transition:all .4s;box-shadow:0 8px 28px rgba(201,151,58,.4);}
+.submit-btn:hover{transform:translateY(-2px);box-shadow:0 14px 40px rgba(201,151,58,.55);}
+.trust-row{display:flex;justify-content:center;gap:32px;margin-top:36px;flex-wrap:wrap;}
+.tr-badge{display:flex;align-items:center;gap:10px;}
+.tr-badge span{font-size:13px;color:#5A6B82;font-weight:300;}
+.tr-badge strong{font-size:13px;color:var(--navy);font-weight:600;font-family:'Cinzel',serif;}
+</style>
+<section class="page-hero">
+  <div class="page-hero-bg"></div><div class="page-hero-pat"></div>
+  <div class="page-hero-cnt">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Free Estimator</span></div>
+    <div class="ph-line"><span>Get Your Estimate</span></div>
+    <h1>Free Construction<br><span class="italic">Cost Estimator</span></h1>
+    <p>Get an instant indicative cost estimate for your project — fill in your details below and our team will send you a detailed breakdown within 24 hours.</p>
+  </div>
+</section>
+
+<section style="background:var(--warm-white);padding:110px 64px;">
+  <div class="est-wrap">
+    <div class="est-card">
+      <div class="est-hd">
+        <h2>Project Cost Estimator</h2>
+        <p>Free, no-obligation estimate. Our team will follow up with a detailed breakdown.</p>
+      </div>
+      <div class="est-body">
+        <form id="estimatorForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Full Name *</label>
+              <input type="text" name="name" placeholder="e.g. Ramesh Balakrishnan" required>
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" name="phone" placeholder="+91 99800 XXXXX" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="you@example.com">
+            </div>
+            <div class="form-group">
+              <label>Project Location *</label>
+              <input type="text" name="location" placeholder="e.g. Jayanagar, Bangalore" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Project Type *</label>
+              <select name="type" required>
+                <option value="">Select project type</option>
+                <option>Residential Home</option>
+                <option>Villa / Duplex</option>
+                <option>Commercial Office</option>
+                <option>Retail / Shop</option>
+                <option>Hotel / Hospitality</option>
+                <option>Hospital / Healthcare</option>
+                <option>School / Institution</option>
+                <option>Renovation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Number of Floors *</label>
+              <select id="est-floors" name="floors" required>
+                <option value="1">Ground Floor (G)</option>
+                <option value="2">G + 1</option>
+                <option value="3">G + 2</option>
+                <option value="4">G + 3</option>
+                <option value="5">G + 4 or more</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Built-up Area (sq.ft per floor) *</label>
+              <input type="number" id="est-area" name="area" placeholder="e.g. 1200" min="100" required>
+            </div>
+            <div class="form-group">
+              <label>Package Preference *</label>
+              <select id="est-package" name="package">
+                <option value="essential">Essential — ₹1,799/sq.ft</option>
+                <option value="signature" selected>Signature — ₹2,199/sq.ft</option>
+                <option value="royal">Royal — ₹2,799/sq.ft</option>
+              </select>
+            </div>
+          </div>
+          <div class="live-calc">
+            <h4>Live Estimate</h4>
+            <span class="est-amount" id="live-estimate">₹ —</span>
+            <small>Enter area above to see an indicative cost. Final quote will be confirmed by our team after site visit.</small>
+          </div>
+          <div class="form-row full">
+            <div class="form-group">
+              <label>Additional Requirements (optional)</label>
+              <textarea name="notes" placeholder="e.g. solar panels, smart home, specific materials, timeline requirements..."></textarea>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">Submit — Get My Free Estimate →</button>
+        </form>
+        <div class="trust-row">
+          <div class="tr-badge">✅ <div><strong>100% Free</strong><span>No obligation estimate</span></div></div>
+          <div class="tr-badge">⚡ <div><strong>24hr Response</strong><span>Our team calls you back</span></div></div>
+          <div class="tr-badge">🔒 <div><strong>Confidential</strong><span>Your data is safe with us</span></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer><div class="footer-grid"><div><div class="footer-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="footer-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></div><p class="footer-desc">Premium construction across Bangalore since 2016.</p><div class="footer-social"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="estimator.html">Free Estimator</a></li></ul></div><div class="footer-col"><h5>Services</h5><ul><li><a href="residential.html">Residential Construction</a></li><li><a href="commercial.html">Commercial Construction</a></li><li><a href="residential.html">Design &amp; Planning</a></li><li><a href="residential.html">Renovation &amp; Interiors</a></li></ul></div><div class="footer-col"><h5>Contact</h5><div class="footer-contact-row"><span class="icon">📞</span><span>+91 99800 14207</span></div><div class="footer-contact-row"><span class="icon">✉️</span><span>info@heavenlygroup.com</span></div><div class="footer-contact-row"><span class="icon">📍</span><span>Mumbai, Maharashtra 400001</span></div></div></div><div class="footer-bottom"><p>© 2026 The Heavenly Group Pvt. Ltd. All rights reserved.</p><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div></footer><button class="float-btn" onclick="window.location='mailto:info@heavenlygroup.com'">💬</button><script src="js/main.js"></script></body></html>

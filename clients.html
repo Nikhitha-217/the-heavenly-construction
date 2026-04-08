@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Our Clients | The Heavenly Group</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;1,400&family=Raleway:wght@200;300;400;500;600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav id="mainNav"><a href="index.html" class="nav-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="nav-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li class="has-dropdown"><a href="#">Services <span class="arrow">▾</span></a><div class="dropdown"><a href="residential.html"><span class="dd-icon">🏠</span> Residential Construction</a><a href="commercial.html"><span class="dd-icon">🏢</span> Commercial Construction</a></div></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li>
+    <li><a href="estimator.html" class="nav-cta">Free Estimate</a></li></ul></nav>
+<style>
+.logo-ticker{background:var(--navy-2);padding:44px 0;overflow:hidden;border-top:1px solid rgba(201,151,58,.1);border-bottom:1px solid rgba(201,151,58,.1);}
+.ticker-track{display:flex;animation:ticker 30s linear infinite;}
+.ticker-track:hover{animation-play-state:paused;}
+.ticker-logo{flex-shrink:0;padding:0 48px;border-right:1px solid rgba(201,151,58,.1);}
+.ticker-logo-inner{width:140px;height:52px;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:14px;font-weight:600;color:var(--stone);letter-spacing:.08em;filter:grayscale(1) opacity(.5);transition:filter .3s;}
+.ticker-logo:hover .ticker-logo-inner{filter:grayscale(0) opacity(1);color:var(--gold-3);}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.ind-grid{display:grid;grid-template-columns:repeat(4,1fr);}
+.ind-cell{padding:52px 32px;text-align:center;background:var(--navy-3);border-right:1px solid rgba(201,151,58,.06);transition:background .3s;}
+.ind-cell:last-child{border-right:none;}
+.ind-cell:hover{background:var(--navy-2);}
+.ind-icon{font-size:44px;display:block;margin-bottom:18px;}
+.ind-count{font-family:'Cinzel',serif;font-size:48px;font-weight:700;color:var(--gold-2);display:block;line-height:1;margin-bottom:8px;}
+.ind-label{font-family:'Cinzel',serif;font-size:12px;font-weight:600;color:var(--off-white);letter-spacing:.08em;margin-bottom:6px;display:block;}
+.ind-sub{font-size:12px;color:var(--stone);font-weight:300;}
+.clients-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.cl-card{background:white;border-radius:2px;border:1px solid rgba(12,28,53,.07);padding:32px;position:relative;overflow:hidden;transition:all .4s;display:flex;flex-direction:column;}
+.cl-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold-3));transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.cl-card:hover{transform:translateY(-6px);box-shadow:0 20px 56px rgba(12,28,53,.1);}
+.cl-card:hover::before{transform:scaleX(1);}
+.cl-logo-area{height:70px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;border-bottom:1px solid rgba(12,28,53,.06);padding-bottom:22px;}
+.cl-logo{width:130px;height:48px;background:linear-gradient(135deg,var(--navy-3),var(--navy-2));border-radius:2px;display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:13px;font-weight:700;color:var(--gold-2);letter-spacing:.1em;border:1px solid rgba(201,151,58,.15);}
+.cl-industry{font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold-2);font-weight:600;font-family:'Cinzel',serif;margin-bottom:8px;display:block;}
+.cl-name{font-family:'Cinzel',serif;font-size:18px;font-weight:600;color:var(--navy);margin-bottom:8px;}
+.cl-loc{font-size:12px;color:var(--stone);font-weight:300;margin-bottom:14px;}
+.cl-desc{font-size:13.5px;line-height:1.7;color:#5A6B82;font-weight:300;flex:1;}
+.cl-year{display:inline-block;margin-top:18px;padding:5px 14px;border:1px solid rgba(201,151,58,.25);font-size:10px;letter-spacing:.18em;color:var(--gold-2);text-transform:uppercase;font-weight:500;border-radius:1px;font-family:'Cinzel',serif;}
+.test-feat-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+.tfc{background:var(--navy-3);border:1px solid rgba(201,151,58,.15);border-radius:2px;padding:44px 40px;position:relative;overflow:hidden;transition:border-color .4s;}
+.tfc:hover{border-color:rgba(201,151,58,.4);}
+.tfc::after{content:'"';position:absolute;top:-10px;right:24px;font-family:'EB Garamond',serif;font-size:120px;color:rgba(201,151,58,.07);line-height:1;}
+.tfc-stars{color:var(--gold-2);font-size:14px;letter-spacing:3px;margin-bottom:20px;}
+.tfc-text{font-family:'EB Garamond',serif;font-size:18px;font-style:italic;line-height:1.75;color:var(--off-white);margin-bottom:28px;position:relative;z-index:1;}
+.tfc-author{display:flex;align-items:center;gap:16px;}
+.tfc-av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-3));display:flex;align-items:center;justify-content:center;font-family:'Cinzel',serif;font-size:18px;font-weight:700;color:var(--navy);flex-shrink:0;}
+.tfc-info strong{display:block;font-family:'Cinzel',serif;font-size:14px;color:var(--off-white);margin-bottom:3px;}
+.tfc-info span{font-size:12px;color:var(--stone);font-weight:300;display:block;}
+.tfc-info em{font-size:11px;color:var(--gold-2);font-style:normal;letter-spacing:.12em;font-family:'Cinzel',serif;}
+</style>
+<section class="page-hero">
+  <div class="page-hero-bg"></div><div class="page-hero-pat"></div>
+  <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&q=85') center/cover no-repeat;clip-path:polygon(15% 0%,100% 0%,100% 100%,0% 100%);"></div>
+  <div style="position:absolute;right:0;top:0;bottom:0;width:45%;background:linear-gradient(to right,rgba(12,28,53,1) 0%,rgba(12,28,53,.55) 35%,transparent 80%);"></div>
+  <div class="page-hero-cnt">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Our Clients</span></div>
+    <div class="ph-line"><span>Trusted Partners</span></div>
+    <h1>50+ Clients Who<br>Trust <span class="italic">The Heavenly Group</span></h1>
+    <p>From first-time homeowners to seasoned real estate developers — our clients choose us because we deliver exactly what we promise, every single time.</p>
+    <div style="display:flex;gap:24px;margin-top:36px;flex-wrap:wrap;">
+      <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Cinzel',serif;font-size:32px;font-weight:700;color:var(--gold-2);">50+</span><span style="font-size:12px;color:var(--stone-light);font-weight:300;line-height:1.4;">Happy<br>Clients</span></div>
+      <div style="width:1px;height:48px;background:rgba(201,151,58,.2);align-self:center;"></div>
+      <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Cinzel',serif;font-size:32px;font-weight:700;color:var(--gold-2);">100%</span><span style="font-size:12px;color:var(--stone-light);font-weight:300;line-height:1.4;">Satisfaction<br>Rate</span></div>
+      <div style="width:1px;height:48px;background:rgba(201,151,58,.2);align-self:center;"></div>
+      <div style="display:flex;align-items:center;gap:10px;"><span style="font-family:'Cinzel',serif;font-size:32px;font-weight:700;color:var(--gold-2);">70%</span><span style="font-size:12px;color:var(--stone-light);font-weight:300;line-height:1.4;">Repeat &amp;<br>Referral</span></div>
+    </div>
+  </div>
+</section>
+<div class="marquee-strip"><div class="marquee-inner"><span class="marquee-item">Trusted by 50+ Clients</span><span class="marquee-item">Residential</span><span class="marquee-item">Commercial</span><span class="marquee-item">Institutional</span><span class="marquee-item">Developer Partnerships</span><span class="marquee-item">5★ Rated</span><span class="marquee-item">Trusted by 50+ Clients</span><span class="marquee-item">Residential</span><span class="marquee-item">Commercial</span><span class="marquee-item">Institutional</span><span class="marquee-item">Developer Partnerships</span><span class="marquee-item">5★ Rated</span></div></div>
+<div class="logo-ticker"><div class="ticker-track">
+  <div class="ticker-logo"><div class="ticker-logo-inner">PRESTIGE</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">SOBHA</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">BRIGADE</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">APOLLO</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">MANIPAL</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">GODREJ</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">FORTIS</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">TATA</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">PRESTIGE</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">SOBHA</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">BRIGADE</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">APOLLO</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">MANIPAL</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">GODREJ</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">FORTIS</div></div>
+  <div class="ticker-logo"><div class="ticker-logo-inner">TATA</div></div>
+</div></div>
+
+<div class="ind-grid reveal">
+  <div class="ind-cell"><span class="ind-icon">🏠</span><span class="ind-count" data-target="28">28</span><span class="ind-label">Residential Clients</span><span class="ind-sub">Homeowners &amp; Villa Owners</span></div>
+  <div class="ind-cell"><span class="ind-icon">🏢</span><span class="ind-count" data-target="12">12</span><span class="ind-label">Commercial Clients</span><span class="ind-sub">Offices, Retail &amp; Hospitality</span></div>
+  <div class="ind-cell"><span class="ind-icon">🏥</span><span class="ind-count" data-target="6">6</span><span class="ind-label">Institutional Clients</span><span class="ind-sub">Schools, Hospitals &amp; Campuses</span></div>
+  <div class="ind-cell"><span class="ind-icon">🤝</span><span class="ind-count">8+</span><span class="ind-label">Developer Partners</span><span class="ind-sub">Real Estate &amp; Infrastructure</span></div>
+</div>
+
+<section style="background:var(--warm-white);padding:110px 64px;" class="reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Who We Serve</span></div>
+    <h2 class="section-title title-dark">Our Valued <span class="italic">Clients</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="clients-grid">
+    <div class="cl-card reveal d1"><div class="cl-logo-area"><div class="cl-logo">PRESTIGE</div></div><span class="cl-industry">Real Estate Developer</span><div class="cl-name">Prestige Group</div><div class="cl-loc">📍 Bangalore, Karnataka</div><p class="cl-desc">Long-term construction partnership for residential villa communities across South Bangalore. 3 completed projects totalling 42 units.</p><span class="cl-year">Partner Since 2019</span></div>
+    <div class="cl-card reveal d2"><div class="cl-logo-area"><div class="cl-logo">APOLLO</div></div><span class="cl-industry">Healthcare</span><div class="cl-name">Apollo Hospitals</div><div class="cl-loc">📍 HSR Layout, Bangalore</div><p class="cl-desc">Construction of a 48,000 sq.ft multi-speciality medical centre with advanced MEP systems and patient-centric architecture.</p><span class="cl-year">Completed 2024</span></div>
+    <div class="cl-card reveal d3"><div class="cl-logo-area"><div class="cl-logo">BRIGADE</div></div><span class="cl-industry">Real Estate Developer</span><div class="cl-name">Brigade Enterprises</div><div class="cl-loc">📍 Whitefield, Bangalore</div><p class="cl-desc">Commercial office tower construction spanning 1.2 lakh sq.ft across 18 floors — delivered on schedule to full occupancy readiness.</p><span class="cl-year">Completed 2023</span></div>
+    <div class="cl-card reveal d1"><div class="cl-logo-area"><div class="cl-logo">SKYLINE</div></div><span class="cl-industry">Education</span><div class="cl-name">Skyline International School</div><div class="cl-loc">📍 Koramangala, Bangalore</div><p class="cl-desc">Full campus construction — classrooms, auditorium, sports complex, and administrative block across 84,000 sq.ft.</p><span class="cl-year">Completed 2023</span></div>
+    <div class="cl-card reveal d2"><div class="cl-logo-area"><div class="cl-logo">MERIDIAN</div></div><span class="cl-industry">Hospitality</span><div class="cl-name">Meridian Hotels &amp; Resorts</div><div class="cl-loc">📍 Electronic City, Bangalore</div><p class="cl-desc">A 120-room business hotel built to international 4-star standards including restaurant, conference facilities, and rooftop pool.</p><span class="cl-year">Completed 2023</span></div>
+    <div class="cl-card reveal d3"><div class="cl-logo-area"><div class="cl-logo">SOBHA</div></div><span class="cl-industry">Real Estate Developer</span><div class="cl-name">Sobha Developers</div><div class="cl-loc">📍 Sarjapur Road, Bangalore</div><p class="cl-desc">Subcontract partnership for premium residential finishing and civil works across two gated community projects with 60+ villas.</p><span class="cl-year">Partner Since 2021</span></div>
+    <div class="cl-card reveal d1"><div class="cl-logo-area"><div class="cl-logo">R. B.</div></div><span class="cl-industry">Private Homeowner</span><div class="cl-name">Ramesh &amp; Priya Balakrishnan</div><div class="cl-loc">📍 Jayanagar, Bangalore</div><p class="cl-desc">Custom 5,200 sq.ft luxury family villa — bespoke architecture, premium Italian marble finishes, and full smart home integration.</p><span class="cl-year">Completed 2024</span></div>
+    <div class="cl-card reveal d2"><div class="cl-logo-area"><div class="cl-logo">GODREJ</div></div><span class="cl-industry">Real Estate Developer</span><div class="cl-name">Godrej Properties</div><div class="cl-loc">📍 Hebbal, Bangalore</div><p class="cl-desc">Construction coordination and civil works for a premium residential township — 200+ apartments across multiple towers.</p><span class="cl-year">Partner Since 2022</span></div>
+    <div class="cl-card reveal d3"><div class="cl-logo-area"><div class="cl-logo">A. S.</div></div><span class="cl-industry">Private Homeowner</span><div class="cl-name">Anush &amp; Deepa Sharma</div><div class="cl-loc">📍 Whitefield, Bangalore</div><p class="cl-desc">Complete 3,800 sq.ft duplex renovation with full interior design, structural upgrades, and modern amenities.</p><span class="cl-year">Completed 2023</span></div>
+  </div>
+</section>
+
+<section style="background:var(--navy);padding:110px 64px;" class="reveal">
+  <div class="section-header">
+    <div class="royal-badge"><span>Client Voices</span></div>
+    <h2 class="section-title title-light">What Our Clients <span class="italic">Say</span></h2>
+    <div class="gold-rule"><span>◆</span></div>
+  </div>
+  <div class="test-feat-grid">
+    <div class="tfc reveal-left"><div class="tfc-stars">★★★★★</div><p class="tfc-text">"The team was professional from day one. Our home was delivered exactly on time, and the quality exceeded everything we expected. Truly a premium experience."</p><div class="tfc-author"><div class="tfc-av">R</div><div class="tfc-info"><strong>Ramesh Balakrishnan</strong><span>Residential Client · 5,200 sq.ft Villa</span><em>Jayanagar, Bangalore</em></div></div></div>
+    <div class="tfc reveal-right"><div class="tfc-stars">★★★★★</div><p class="tfc-text">"For a healthcare project, precision and compliance are non-negotiable. The Heavenly Group understood this perfectly. Every spec delivered exactly as designed."</p><div class="tfc-author"><div class="tfc-av">A</div><div class="tfc-info"><strong>Dr. Anil Krishnamurthy</strong><span>Apollo Medical Centre · 48,000 sq.ft</span><em>HSR Layout, Bangalore</em></div></div></div>
+    <div class="tfc reveal-left"><div class="tfc-stars">★★★★★</div><p class="tfc-text">"Transparent billing and real-time tracking gave us complete confidence. Their zero-surprise billing made this unlike any construction experience we had before."</p><div class="tfc-author"><div class="tfc-av">P</div><div class="tfc-info"><strong>Priya Venkatesh</strong><span>Commercial Developer · Brigade Project</span><em>Whitefield, Bangalore</em></div></div></div>
+    <div class="tfc reveal-right"><div class="tfc-stars">★★★★★</div><p class="tfc-text">"We were building our children's school — it had to be perfect. The Heavenly Group treated every detail with the same care we did. We recommend them without hesitation."</p><div class="tfc-author"><div class="tfc-av">S</div><div class="tfc-info"><strong>Suresh Nair</strong><span>Skyline International School · Principal</span><em>Koramangala, Bangalore</em></div></div></div>
+  </div>
+</section>
+<section class="cta-banner reveal"><div class="cta-text"><h2>Join Our Growing Family of <em>Happy Clients</em></h2><p>Start your project today and experience the Heavenly difference.</p></div><div class="cta-actions"><a href="estimator.html" class="btn-navy">Get Free Estimate</a><a href="mailto:info@heavenlygroup.com" class="btn-outline-navy">Contact Us</a></div></section><footer><div class="footer-grid"><div><div class="footer-logo"><img src="images/logo.jpg" alt="The Heavenly Group"><div class="footer-logo-text"><strong>THE HEAVENLY GROUP</strong><span>Home Construction with Royal Elegance</span></div></div><p class="footer-desc">Premium construction across Bangalore since 2016.</p><div class="footer-social"><a href="#">f</a><a href="#">in</a><a href="#">𝕏</a><a href="#">▶</a></div></div><div class="footer-col"><h5>Quick Links</h5><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="residential.html">Residential</a></li><li><a href="commercial.html">Commercial</a></li><li><a href="portfolio.html">Portfolio</a></li><li><a href="clients.html">Our Clients</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="estimator.html">Free Estimator</a></li></ul></div><div class="footer-col"><h5>Services</h5><ul><li><a href="residential.html">Residential Construction</a></li><li><a href="commercial.html">Commercial Construction</a></li><li><a href="residential.html">Design &amp; Planning</a></li><li><a href="residential.html">Renovation &amp; Interiors</a></li></ul></div><div class="footer-col"><h5>Contact</h5><div class="footer-contact-row"><span class="icon">📞</span><span>+91 99800 14207</span></div><div class="footer-contact-row"><span class="icon">✉️</span><span>info@heavenlygroup.com</span></div><div class="footer-contact-row"><span class="icon">📍</span><span>Mumbai, Maharashtra 400001</span></div></div></div><div class="footer-bottom"><p>© 2026 The Heavenly Group Pvt. Ltd. All rights reserved.</p><div class="footer-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div></footer><button class="float-btn" onclick="window.location='mailto:info@heavenlygroup.com'">💬</button><script src="js/main.js"></script></body></html>
